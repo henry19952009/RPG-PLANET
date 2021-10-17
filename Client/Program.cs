@@ -25,8 +25,8 @@ namespace blazorProyI.Client
         /* Mètodo que nos permite configurar el sistema de inyección de dependencias  */
        private static void ConfigureServices(IServiceCollection services)
        {
-            services.AddSingleton<IServiceMovie, ServiceMovie>();
-            services.AddSingleton<IServicesActor, ServiceActor>();
+            services.AddScoped<IServiceMovie, ServiceMovie>();
+            services.AddScoped<IServicesActor, ServiceActor>();
         }
     }
 }

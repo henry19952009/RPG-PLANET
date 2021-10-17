@@ -1,6 +1,7 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">blazorProyI</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+    <img src="https://e7.pngegg.com/pngimages/775/621/png-clipart-clapperboard-cinema-film-computer-icons-corporate-boards-miscellaneous-logo-thumbnail.png"height="20px" width="30px">
+        <a class="navbar-brand" href="">Go to cine</a>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
 </div>
@@ -9,6 +10,12 @@
     <ul class="nav flex-column">
         
         <li class="nav-item px-3">
+            <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi btn-outline-primary" aria-hidden="true"></span> Servicio peliculas
+            </NavLink>
+        </li>
+        
             <NavLink class="nav-link" href="categories">
                 <span class="oi oi-list" aria-hidden="true"></span> Categorías
             </NavLink>
@@ -19,13 +26,25 @@
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="/movies/search" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="movies/search" Match="NavLinkMatch.All">
                 <span class="oi oi-dashboard" aria-hidden="true"></span> Buscar pelicula
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="showmovies">
+                <span class="oi oi-dashboard" aria-hidden="true"></span> muestra de peliculas
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="actors">
                 <span class="oi oi-list" aria-hidden="true"></span> Actores
+                 </NavLink>
+        </li>
+        
+        
+                <li class="nav-item px-3">
+            <NavLink class="nav-link" href="movie/{MovieId:int}">
+                <span class="oi oi-list" aria-hidden="true"></span> peliculas
             </NavLink>
         </li>
     </ul>

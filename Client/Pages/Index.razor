@@ -1,11 +1,70 @@
 ﻿@page "/"
 @using blazorProyI.Client.Pages.Components
+@using blazorProyI.Shared.Entity
 @inject IServiceMovie movie
+
+<!DOCTYPE html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="categories/create">Crear categorias</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="categories/edit/{Id:int}">Editar Categorías</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actores
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="actors/create">Crear Actores</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="actors/edit">Editar Actores</a>
+                    </div>
+            
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Peliculas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="movies/create">Crear peliculas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Categorías</a>
+                    </div>
+            
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Extras
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Publicaciones</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Categorías</a>
+                    </div>
+            
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
 <CardMoviesComponent Movies="Movies"></CardMoviesComponent>
 @code {
+    
     private List <Movie> Movies;
     protected override void OnInitialized()
     {
         Movies = movie.GetMovies();
     }
+        
 }

@@ -1,23 +1,40 @@
 <div class="jumbotron">
-    <h6>Peliculas</h6>
-    <div class="container-fluid content-row">
-        <div class="row mb-3">
-            @foreach (var movie in Movies)
-            {
-                <div class="col-sm-12 col-lg-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <div class="card-header"><small>@movie.MovieName</small></div>
-                            <img src="@movie.MovieImage" class="card-img-top" height="400px" width="200px">
-                            <div class="card-footer">
-                                <small class="text-muted">@movie.Premier</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
+  <h6>Peliculas</h6>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    @foreach (var movie in Movies){
+      <div class="col-sm-12 col-lg-4 mb-3">
+        <div class="card h-100">
+           
+          <img src="@movie.MovieImage" class="card-img-top" width="150" height="400" data-bs-dismiss="modal" aria-label="Close" >
+          <div class="card-body">
+            <h4 class="card-title">@movie.Name</h4>
+            <h6 class="card-title">@movie.Score</h6>
+            <h6 class="card-title">@movie.Premier</h6>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#modal_@movie.Id'>Mas...</button>
+
+          </div>
         </div>
-    </div>
+      </div>
+
+
+      <div class="modal fade" id='modal_@movie.Id'tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="False">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">@movie.Name</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">@movie.Sinopsis</div>
+          </div>
+        </div>
+      </div>
+
+
+    } 
+
+  </div>
 </div>
 @code {
     [Parameter] public List<Movie> Movies { get; set; }

@@ -1,12 +1,16 @@
 <div>
-    <label class="form-label">@Label</label>
-    <div>
+   <div class="row" >
+       <div>
+    <label class="form-label">@Label
         @* Sólo permitiremos el cargue de una imagen *@
         <InputFile OnChange="OnChange" accept=".jpg,.png,.jpeg"></InputFile>
         @* Si quisieramos permitir el cargue de varias imagenes
         <InputFile multiple OnChange="OnChange" accept=".jpg,.png,.jpeg"></InputFile>
          *@
-    </div>
+         </label>
+     </div>
+  </div>
+  
     <div>
         @if (imageT !=  null)
         {

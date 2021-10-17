@@ -1,9 +1,31 @@
 @page "/actors/create"
+@using System;
+@using System.Collections.Generic;
 @using blazorProyI.Client.Pages.Components
-<FormActor OnValidSubmit="Create" Actor="Actor"></FormActor>
+@inject IServiceMovie repositorio
+@inject NavigationManager navigationManager
+@* IErrorMessage mostrarMensajes*@
+<h3>Crear Actor</h3>
+<FormActor OnValidSubmit="Create" Actor="Actor"></FormActor> 
 @code{
     private Actor Actor = new Actor();
-    void Create(){
-        Console.WriteLine("");
+    
+   private async Task Create()
+   {try{
+       var httpResponse = await repositorio.Post("api/actors", Actor);
+       if (httpResponse.Error){
+         var body = await httpResponse.GetBody();
+           /*await mostrarMensajes.ShowErrorMessage(await httpResponse.GetBody());*/
+           Console.WriteLine(body);
+           
+       } else {
+            navigationManager.NavigateTo("/actors");
+       }
+       }catch(Exception e){
+           if (e.Source != null)
+        Console.WriteLine("{0} Exception caught.", e);
+    throw;
+       
+        }
     }
 } 

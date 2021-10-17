@@ -1,5 +1,7 @@
+using System;
 using blazorProyI.Shared.Entity;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace blazorProyI.Client.Services
 {
@@ -7,5 +9,6 @@ namespace blazorProyI.Client.Services
     public interface IServiceMovie
     {
         List<Movie> GetMovies();
+        Task<HttpResponseWrapper<object>> Post<T>(string url, T send);
     }
 }

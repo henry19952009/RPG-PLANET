@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QcQlUE4FoUbc8rpcTHdZHUxvVBRR330fLe+cZqZv22CfPFsac3tvNKJvTRDNHrsjxGluoGckzEz39DgTuF579A==",
+  "dgSpecHash": "93i3qNfwpqc/+td8ZJNsFAVm2jvUJ9bLlcruquuEqZp8Pf3dK/pO03sB1nFoDv68kgEDBd/pHpMCn6bVlsBakw==",
   "success": true,
-  "projectFilePath": "/home/felipe/blazorProyI/Shared/blazorProyI.Shared.csproj",
+  "projectFilePath": "/home/felipe/Vídeos/blazorProyI/Shared/blazorProyI.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

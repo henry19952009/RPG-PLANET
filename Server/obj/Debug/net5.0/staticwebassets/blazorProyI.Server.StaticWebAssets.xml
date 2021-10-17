@@ -1,5 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="/home/felipe/blazorProyI/Client/bin/Debug/net5.0/wwwroot/" />
-  <ContentRoot BasePath="/" Path="/home/felipe/blazorProyI/Client/obj/Debug/net5.0/scopedcss/bundle/" />
-  <ContentRoot BasePath="/" Path="/home/felipe/blazorProyI/Client/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/home/felipe/Vídeos/blazorProyI/Client/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/home/felipe/Vídeos/blazorProyI/Client/obj/Debug/net5.0/scopedcss/bundle/" />
+  <ContentRoot BasePath="/" Path="/home/felipe/Vídeos/blazorProyI/Client/wwwroot/" />
 </StaticWebAssets>

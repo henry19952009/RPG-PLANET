@@ -10,11 +10,11 @@
 }
 
 .sidebar[b-t25x2cjvsn] {
-    background-image: linear-gradient(180deg, rgb(45, 134, 37) 0%, #472306 70%);
+    background-image: linear-gradient(180deg, rgb(46, 89, 138) 0%, #000000 70%);
 }
 
 .top-row[b-t25x2cjvsn] {
-    background-color: #f7f7f7;
+    background-color: #000000;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
@@ -75,7 +75,7 @@
 }
 
 .top-row[b-h998ds1ffl] {
-    height: 3.5rem;
+    height: 3rem;
     background-color: rgba(0,0,0,0.4);
 }
 

@@ -22,3 +22,15 @@ C:/Users/henry/OneDrive/Escritorio/programacion/blazorProyI/Shared/obj/Debug/net
 /home/felipe/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.dll
 /home/felipe/blazorProyI/Shared/obj/Debug/net5.0/ref/blazorProyI.Shared.dll
 /home/felipe/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.pdb
+/home/felipe/Vídeos/blazorProyI/Shared/bin/Debug/net5.0/blazorProyI.Shared.deps.json
+/home/felipe/Vídeos/blazorProyI/Shared/bin/Debug/net5.0/blazorProyI.Shared.dll
+/home/felipe/Vídeos/blazorProyI/Shared/bin/Debug/net5.0/ref/blazorProyI.Shared.dll
+/home/felipe/Vídeos/blazorProyI/Shared/bin/Debug/net5.0/blazorProyI.Shared.pdb
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.csproj.AssemblyReference.cache
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.AssemblyInfoInputs.cache
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.AssemblyInfo.cs
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.csproj.CoreCompileInputs.cache
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.dll
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/ref/blazorProyI.Shared.dll
+/home/felipe/Vídeos/blazorProyI/Shared/obj/Debug/net5.0/blazorProyI.Shared.pdb

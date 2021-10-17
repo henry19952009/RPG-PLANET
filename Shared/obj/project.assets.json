@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/felipe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/felipe/blazorProyI/Shared/blazorProyI.Shared.csproj",
+      "projectUniqueName": "/home/felipe/Vídeos/blazorProyI/Shared/blazorProyI.Shared.csproj",
       "projectName": "blazorProyI.Shared",
-      "projectPath": "/home/felipe/blazorProyI/Shared/blazorProyI.Shared.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/felipe/blazorProyI/Shared/obj/",
+      "projectPath": "/home/felipe/Vídeos/blazorProyI/Shared/blazorProyI.Shared.csproj",
+      "packagesPath": "/home/felipe/.nuget/packages/",
+      "outputPath": "/home/felipe/Vídeos/blazorProyI/Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/felipe/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }

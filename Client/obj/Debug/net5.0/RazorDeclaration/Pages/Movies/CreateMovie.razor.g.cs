@@ -13,85 +13,92 @@ namespace blazorProyI.Client.Pages.Movies
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 1 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 2 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 3 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 4 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 5 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 6 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 7 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 8 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 9 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 10 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 11 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Shared.Entity;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 12 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "/home/felipe/Vídeos/blazorProyI/Client/Pages/Movies/CreateMovie.razor"
+using blazorProyI.Client.Pages.Components;
 
 #line default
 #line hidden
@@ -104,6 +111,46 @@ using blazorProyI.Client.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 6 "/home/felipe/Vídeos/blazorProyI/Client/Pages/Movies/CreateMovie.razor"
+       
+    private Movie Movie = new Movie();
+    private List<Category> CategoriasNoSeleccionadas = new List<Category>();
+
+    protected override void OnInitialized()
+    {
+        CategoriasNoSeleccionadas = new List<Category>(){
+new Category(){Id = 1, Name="Comedia"},
+new Category(){Id = 2, Name="Terror"},
+new Category(){Id = 3, Name="Ciencia Ficción"},
+new Category(){Id = 4, Name="Documentales"},
+new Category(){Id = 5, Name="Comedia"}
+};
+    }
+    void Create()
+    {
+        
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 22 "/home/felipe/Vídeos/blazorProyI/Client/Pages/Movies/CreateMovie.razor"
+                                                                                                        
+        Console.WriteLine(navigationManager.Uri);
+        navigationManager.NavigateTo("movie");
+        Console.WriteLine($"Pelicula: {Movie.Name}");
+        Console.WriteLine($"Premier: {Movie.Premier}");
+        Console.WriteLine($"Esta en cartelera: {Movie.EnCartelera}");
+        Console.WriteLine($"Poster: {Movie.Poster}");
+        Console.WriteLine($"Sinopsis: {Movie.Sinopsis}");
+
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

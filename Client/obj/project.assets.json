@@ -1171,19 +1171,19 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/felipe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/felipe/blazorProyI/Client/blazorProyI.Client.csproj",
+      "projectUniqueName": "/home/felipe/Vídeos/blazorProyI/Client/blazorProyI.Client.csproj",
       "projectName": "blazorProyI.Client",
-      "projectPath": "/home/felipe/blazorProyI/Client/blazorProyI.Client.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/felipe/blazorProyI/Client/obj/",
+      "projectPath": "/home/felipe/Vídeos/blazorProyI/Client/blazorProyI.Client.csproj",
+      "packagesPath": "/home/felipe/.nuget/packages/",
+      "outputPath": "/home/felipe/Vídeos/blazorProyI/Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/felipe/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1195,8 +1195,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/felipe/blazorProyI/Shared/blazorProyI.Shared.csproj": {
-              "projectPath": "/home/felipe/blazorProyI/Shared/blazorProyI.Shared.csproj"
+            "/home/felipe/Vídeos/blazorProyI/Shared/blazorProyI.Shared.csproj": {
+              "projectPath": "/home/felipe/Vídeos/blazorProyI/Shared/blazorProyI.Shared.csproj"
             }
           }
         }
@@ -1238,7 +1238,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.10, 5.0.10]"
+            "version": "[5.0.11, 5.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -1246,7 +1246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

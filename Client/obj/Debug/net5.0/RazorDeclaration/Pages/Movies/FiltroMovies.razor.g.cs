@@ -13,91 +13,91 @@ namespace blazorProyI.Client.Pages.Movies
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 1 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 2 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 3 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 4 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 5 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 6 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 7 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 8 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 9 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 10 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 11 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Shared.Entity;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "/home/felipe/blazorProyI/Client/_Imports.razor"
+#line 12 "/home/felipe/Vídeos/blazorProyI/Client/_Imports.razor"
 using blazorProyI.Client.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/felipe/blazorProyI/Client/Pages/Movies/FiltroMovies.razor"
+#line 2 "/home/felipe/Vídeos/blazorProyI/Client/Pages/Movies/FiltroMovies.razor"
 using blazorProyI.Client.Pages.Components;
 
 #line default
@@ -112,7 +112,7 @@ using blazorProyI.Client.Pages.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 74 "/home/felipe/blazorProyI/Client/Pages/Movies/FiltroMovies.razor"
+#line 74 "/home/felipe/Vídeos/blazorProyI/Client/Pages/Movies/FiltroMovies.razor"
        
     private List<Movie> Movies;
     string movie_name = "";
@@ -136,7 +136,7 @@ using blazorProyI.Client.Pages.Components;
     }
     private void CargarNuevasPeliculas()
     {
-        Movies = movie.GetMovies().Where(x => x.MovieName.ToLower().Contains(movie_name.ToLower())).ToList();
+        Movies = movie.GetMovies().Where(x => x.Name.ToLower().Contains(movie_name.ToLower())).ToList();
         Console.WriteLine($"Nombre pelicula: {movie_name}");
         Console.WriteLine($"Categoría seleccionada: {categorySelected}");
         Console.WriteLine($"En cartelera {enCartelera}");
